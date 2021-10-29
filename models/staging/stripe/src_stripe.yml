@@ -10,8 +10,8 @@ sources:
       - name: payment
         loaded_at_field: "cast(created as timestamp)"
         freshness:
-          warn_after: {count: 14, period: day}
-          error_after: {count: 7, period: day}
+          warn_after: {count: 1000, period: day}
+          error_after: {count: 5000, period: day}
         description: Raw payment data - each row is a payment
         columns:
           - name: payment_id
