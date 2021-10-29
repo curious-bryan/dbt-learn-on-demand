@@ -14,7 +14,7 @@ sources:
           error_after: {count: 5000, period: day}
         description: Raw payment data - each row is a payment
         columns:
-          - name: payment_id
+          - name: id
             description: Primary key for payments
             tests:
               - not_null
