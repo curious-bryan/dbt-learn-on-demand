@@ -1,0 +1,21 @@
+version: 2
+
+seeds:
+
+  - name: employees
+    description: CSV of employee data; each row is a unique employee
+    columns:
+      - name: employee_id
+        description: Unique id for each employee
+        tests:
+          - not_null
+          - unique
+      - name: email
+        description: Unique email for each employee
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: Foreign key to customers; associates employee with customer
+        tests:
+          - not_null
